@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple FontAwesome IconPicker</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="simple-iconpicker.css" rel='stylesheet' type='text/css' />
+    <script type='text/javascript' src="simple-iconpicker.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('.input1').iconpicker(".input1");
+      $('.input2').iconpicker(".input2");
+      $('.input3').iconpicker(".input3");
+
+    });
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Simple FontAwesome IconPicker</h1>
+      <h2>(c) 2016 <a href="http://www.howlthemes.com">HowlThemes</a><br/>Licensed under the MIT License</h2>
+    </header>
+
+    <div class="page">
+      <h3>Demo</h3>
+      <h4>Value Null</h4>
+      <input type="text" class="input1 input"/>
+      <br/><br/>
+      <h4>Value == Amazon</h4>
+      <input type="text" class="input2 input" value="fa-amazon"/>
+      <br/><br/>
+      <h4>Just for fun</h4>
+      <input type="text" class="input3 input"/>
+      <br/><br/>
+    </div>
+
+    <div class="page">
+      <h3>How to use</h3>
+      <p><b>Step 1</b>: Add jQuery and fontawesome files to webpage.</p>
+      <p><b>Step 2</b>: Add <span class="incode">simple-iconpicker.js</span> and <span class="incode">simple-iconpicker.css</span> file above <span class="incode">&lt;/head&gt;</span> tag</p>
+      <code>
+        &lt;link href=&quot;simple-iconpicker.css&quot; rel='stylesheet' type='text/css' /&gt;<br/>
+        &lt;script src=&quot;simple-iconpicker.js&quot; type='text/javascript'&gt;&lt;/script&gt;
+      </code>
+      <p><b>Step 3</b>: Now add following script above <span class="incode">&lt;/head&gt;</span>, and replace <span class="incode">.selector</span> with inputbox class.</p>
+        <code>
+          $('.selector').iconpicker(&quot;.selector&quot;);
+        </code>
+    </div>
+
+
+    <style>
+    body{
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+    header {
+    margin: 20px;
+    }
+    header h2 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    }
+    header h2 a{
+      text-decoration: none;
+      border-bottom: 1px solid #333;
+      color:#333;
+      text-transform: uppercase;
+    }
+    .page{
+      border:1px solid #bbb;
+      margin:20px;
+      padding:20px;
+    }
+    h3{
+      background:#ccc;
+      border: 1px solid #bbb;
+      color:#333;
+      font-size:30px;
+      padding:10px;
+      margin:-20px;
+      margin-bottom: 20px;
+    }
+    .input{
+      border:1px solid #ccc;
+      background:#efefef;
+      padding:10px;
+      font-size: 14px;
+      border-radius:3px;
+      outline: none;
+    }
+    .input:focus{
+      border-color:#4598ff;
+    }
+    h4{
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+    .incode{
+      background:#efefef;
+      padding:3px;
+      color:#920000;
+      font-family: monospace;
+    }
+    code{
+      background:#efefef;
+      border: 1px solid #ccc;
+      padding: 10px;
+      display:block;
+      line-height: 18px;
+    }
+    </style>
+
+  </body>
+</html>

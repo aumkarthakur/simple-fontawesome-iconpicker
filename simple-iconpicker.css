@@ -1,0 +1,82 @@
+/*!
+ * Simple Font Awesome Icon Picker
+ * http://howlthemes.com
+ *
+ * Originally written by (c) 2016 Aumkar Thakur
+ * Licensed under the MIT License
+ * https://github.com/aumkarthakur/simple-fontawesome-iconpicker/blob/master/LICENSE
+ *
+ */
+.iconpicker {
+    border: 1px solid #ccc;
+    background: #efefef;
+    width: 260px;
+    display: none;
+    position:relative;
+    margin-top: 16px;
+    margin-bottom: : 10px;
+}
+.iconpicker:hover,
+.iconpicker:active,
+.iconpicker:focus {
+  display: block !important;
+}
+.iconpicker .geticonval .fa {
+    font-size: 28px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+}
+.iconpicker .geticonval {
+    background: #fcfcfc;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 5px;
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+    float: left;
+}
+.iconpicker .geticonval:hover {
+    background: #efefef;
+    cursor: pointer;
+}
+.iconpicker .geticonval:active {
+    background: #ccc;
+}
+.srchicons {
+    margin: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 3px;
+    width: 225px;
+    position: absolute;
+    margin-bottom: 60px;
+    display: block;
+}
+.iconsholder {
+    height: 300px;
+    overflow: auto;
+    margin-top: 50px;
+}
+.arrow:after, .arrow:before{
+  bottom: 100%;
+border: solid transparent;
+content: " ";
+height: 0;
+width: 0;
+bottom: 100%;
+position: absolute;
+pointer-events: none;
+}
+.arrow:before {
+    border-bottom-color: #efefef;
+    border-width: 12px;
+    left: 10%;
+    margin-left: -12px;
+}
+.selectedicon{
+  background:#f55e4f !important;
+  border-color: #f55e4f !important;
+  color:#fff;
+}
