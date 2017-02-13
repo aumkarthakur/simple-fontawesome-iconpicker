@@ -3,6 +3,8 @@ simple-fontawesome-iconpicker
 
 I wanted a simple fontawesome iconpicker for my [wordpress theme] (http://www.howlthemes.com), so I created this plugin.
 
+**Live Demo:** http://jsfiddle.net/Aumkar/28eth61x/1/embedded/result/
+
 ## How to use
 
 **Step 1**: Add jQuery and fontawesome files to webpage.
