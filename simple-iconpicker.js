@@ -54,7 +54,7 @@ function iconpickerbox() {
         $(this).focusin(function() {
 
             $('.howl-iconpicker-outer').css('display', 'table');
-
+            $('.howl-iconpicker .geticonval').removeClass('selectedicon');
             whichInput = $(this).attr('class');
             $(".howl-iconpicker .geticonval").on('click', function() {
                 var getIconId = $(this).text();
