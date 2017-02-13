@@ -23,6 +23,10 @@ $('.selector').iconpicker(".selector");
 
 ## Change log
 
-In version 2.0, I've improved the efficiency of the code & improved performance by not appending icon picker box after each input box, instead now I'm prepending only one iconpicker box to body and when user click on input a that iconpicker pop outs.
+
+v2.0
+ - Improved the efficiency & performance of the plugin by using one single icon picker box instead of individual boxes for each inputs. 
+ - Updated FontAwesome to 4.7.0 (more icons!)
+ - Some code optimizations
 
 Special Thanks to **DEEPAK KAMAT**
