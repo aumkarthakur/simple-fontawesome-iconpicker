@@ -38,8 +38,16 @@ jQuery(document).ready(function(){
     }); //Search box code Ends
 
     //Close button code
-
     jQuery('.howl-iconpicker-close').click(function(){
+        jQuery('.howl-iconpicker-outer').css('display', 'none');
+    });
+
+    jQuery(".howl-iconpicker").on("click", function(e){
+        
+        e.stopPropagation();
+    });
+
+    jQuery('.howl-iconpicker-outer').on('click', function(){
         jQuery('.howl-iconpicker-outer').css('display', 'none');
     });
 
