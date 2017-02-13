@@ -1,32 +1,63 @@
 /*!
- * Simple Font Awesome Icon Picker
+ * Simple Font Awesome Icon Picker 2.0
  * http://howlthemes.com
  *
- * Originally written by (c) 2016 Aumkar Thakur
+ * Originally written by (c) 2016-17 Aumkar Thakur
+ * Special Thanks To Deepak Kamat
  * Licensed under the MIT License
  * https://github.com/aumkarthakur/simple-fontawesome-iconpicker/blob/master/LICENSE
  *
  */
-.iconpicker {
+ .howl-iconpicker-outer {
+    background: rgba(0, 0, 0, 0.78);
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999999;
+}
+.howl-iconpicker-middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+.howl-iconpicker-close {
+    background: #e83131;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 242px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.howl-iconpicker-close:hover{
+  background:#e62323;
+}
+.howl-iconpicker {
     border: 1px solid #ccc;
     background: #efefef;
     width: 260px;
-    display: none;
+    margin:0 auto;
+    //display: none;
     position:relative;
-    margin-top: 16px;
-    margin-bottom: : 10px;
 }
-.iconpicker:hover,
-.iconpicker:active,
-.iconpicker:focus {
+.howl-iconpicker:hover,
+.howl-iconpicker:active,
+.howl-iconpicker:focus {
   display: block !important;
 }
-.iconpicker .geticonval .fa {
+.howl-iconpicker .geticonval .fa {
     font-size: 28px;
     margin-right: 10px;
     padding-bottom: 10px;
 }
-.iconpicker .geticonval {
+.howl-iconpicker .geticonval {
     background: #fcfcfc;
     border: 1px solid #ccc;
     padding: 10px;
@@ -37,11 +68,11 @@
     overflow: hidden;
     float: left;
 }
-.iconpicker .geticonval:hover {
+.howl-iconpicker .geticonval:hover {
     background: #efefef;
     cursor: pointer;
 }
-.iconpicker .geticonval:active {
+.howl-iconpicker .geticonval:active {
     background: #ccc;
 }
 .srchicons {
@@ -58,22 +89,6 @@
     height: 300px;
     overflow: auto;
     margin-top: 50px;
-}
-.arrow:after, .arrow:before{
-  bottom: 100%;
-border: solid transparent;
-content: " ";
-height: 0;
-width: 0;
-bottom: 100%;
-position: absolute;
-pointer-events: none;
-}
-.arrow:before {
-    border-bottom-color: #efefef;
-    border-width: 12px;
-    left: 10%;
-    margin-left: -12px;
 }
 .selectedicon{
   background:#f55e4f !important;
