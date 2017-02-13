@@ -3,7 +3,7 @@ simple-fontawesome-iconpicker
 
 I wanted a simple fontawesome iconpicker for my [wordpress theme] (http://www.howlthemes.com), so I created this plugin.
 
-**Live Demo:** http://jsfiddle.net/Aumkar/28eth61x/2/embedded/result/
+**Live Demo:** http://jsfiddle.net/Aumkar/28eth61x/1/embedded/result/
 
 ## How to use
 
@@ -18,7 +18,6 @@ I wanted a simple fontawesome iconpicker for my [wordpress theme] (http://www.ho
 **Step 3**: Now add following script above `</head>`, and replace `.selector` with inputbox class.
 
 ```
-iconpickerbox(); // This Function Prepend Iconpicker Box to body
 $('.selector').iconpicker(".selector");
 ```
 

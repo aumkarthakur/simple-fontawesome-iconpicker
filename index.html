@@ -11,9 +11,8 @@
     var whichInput = 0;
 
     $(document).ready(function(){
-      iconpickerbox();
       $('.input1').iconpicker(".input1");
-      $('.input2').iconpicker(".input2");
+      $('#inputid2').iconpicker("#inputid2");
       $('.input3').iconpicker(".input3");
     });
     </script>
@@ -30,7 +29,7 @@
       <input type="text" class="input1 input"/>
       <br/><br/>
       <h4>Value == Amazon</h4>
-      <input type="text" class="input2 input" value="fa-amazon"/>
+      <input type="text" class="input" id="inputid2" value="fa-amazon"/>
       <br/><br/>
       <h4>Just for fun</h4>
       <input type="text" class="input3 input"/>
@@ -42,8 +41,8 @@
       <p><b>Step 1</b>: Add jQuery and fontawesome files to webpage.</p>
       <p><b>Step 2</b>: Add <span class="incode">simple-iconpicker.js</span> and <span class="incode">simple-iconpicker.css</span> file above <span class="incode">&lt;/head&gt;</span> tag</p>
       <code>
-        &lt;link href=&quot;simple-iconpicker.css&quot; rel='stylesheet' type='text/css' /&gt;<br/>
-        &lt;script src=&quot;simple-iconpicker.js&quot; type='text/javascript'&gt;&lt;/script&gt;
+        &lt;link href=&quot;simple-iconpicker.min.css&quot; rel='stylesheet' type='text/css' /&gt;<br/>
+        &lt;script src=&quot;simple-iconpicker.min.js&quot; type='text/javascript'&gt;&lt;/script&gt;
       </code>
       <p><b>Step 3</b>: Now add following script above <span class="incode">&lt;/head&gt;</span>, and replace <span class="incode">.selector</span> with inputbox class.</p>
         <code>
